@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<title>Just.DA</title>
+
+	<link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+	<!-- Bootstrap -->
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+		integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<link rel="stylesheet" href="assets/css/carousel.css">
+	<link rel="stylesheet" href="assets/css/slick.css">
+	<link rel="stylesheet" href="assets/css/slick-theme.css">
+	<link rel="stylesheet" href="assets/css/jquery.pagepiling.css">
+	<link rel="stylesheet" href="assets/css/fullpage.css">
+	<script src="assets/js/prefixfree.js"></script>
+	<style>
+		.slider {
+			width: 90%;
+			margin: 0 auto;
+		}
+
+		.slick-slide {
+			margin: 100px 20px;
+		}
+
+		.slick-slide img {
+			width: 100%;
+		}
+
+		.slick-prev:before,
+		.slick-next:before {
+			color: black;
+		}
+
+		.slick-slide {
+			transition: all ease-in-out .3s;
+			opacity: .2;
+		}
+
+		.slick-active {
+			opacity: .5;
+		}
+
+		.slick-current {
+			opacity: 1;
+		}
+
+		.fp-section {
+			width: 100% !important;
+			position: absolute;
+			left: 0;
+			top: 0;
+			visibility: hidden;
+			opacity: 1;
+			z-index: 0;
+			transition: all .8s;
+			transition-timing-function: ease-in-out;
+		}
+
+		.fp-section.active {
+			visibility: visible;
+
+			z-index: 1;
+		}
+
+		.fp-tableCell {
+			display: flex;
+			align-items: center;
+		}
+	</style>
+
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+	<header class="header" id="header">
+		<nav class="navbar fixed-top navbar-expand-lx navbar-dark">
+			<a class="navbar-brand" href="#"><img src="assets/img/site_logo.svg" alt="Just.DA"></a>
+			<button class="navbar-toggler x collapsed" type="button" data-toggle="collapse"
+				data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="collapsibleNavId">
+				<ul class="navbar-nav ml-auto  mt-lg-0">
+					<li class="nav-item active">
+						<a class="nav-link" href="#firstPage">Услуги</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#secondPage">Кейсы</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#thirdPage">Команда</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#contactsPage">Заказать</a>
+					</li>
+				</ul>
+			</div>
+			<div class="leng">
+				<div class="dropdown">
+					<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						RUS
+					</button>
+					<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+						<a class="dropdown-item" href="#">RUS</a>
+						<a class="dropdown-item" href="#">ENG</a>
+						<a class="dropdown-item" href="#">KAZ</a>
+					</div>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<main id="main">
+		<div class="soc-links">
+			<a href="#"><i class="fab fa-youtube"></i></a>
+			<a href="#"><i class="fab fa-behance"></i></a>
+			<a href="#"><i class="fab fa-instagram"></i></a>
+		</div>
+		<div class="page-nubmer">
+			<span>01</span><br> /<br> 05
+		</div>
+
+		<div id="fullpage">
+			
+			<section id="header-wrapper" class="section panel fp-noscroll" data-anchor="firstPage"
+				data-section-name="header-wrapper">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-6 col-xl-5">
+							<div class="left-content">
+								<div class="line"></div>
+								<h1 class="title">Digital-Агентство</h1>
+								<p class="text">JustDA - независимое digital-агентство. Наша деятельность
+									включает в себя:
+									web-разработку, smm-продвижение, анализ и мониторинг, креативные решения, создание
+									видео-продукции и т.д.</p>
+								<button class="btn btn-main">Связаться</button>
+							</div>
+						</div>
+						<div class="col-lg-6 col-xl-7">
+
+						</div>
+						<img src="assets/img/background.jpg" class="img-fluid header-bg" alt="">
+					</div>
+				</div>
+			</section>
+
+			<section id="services-wrapper" class="section panel" data-anchor="secondPage"
+				data-section-name="services-wrapper">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12">
+							<div class="services-title">
+								<div class="line"></div>
+								<h2 class="title">Наши услуги</h2>
+							</div>
+							<div class="container-fluid">
+								<div class="row">
+									<div class="col-lg-4">
+										<div class="services-box">
+											<header>
+												<img src="assets/img/background.jpg" alt="">
+											</header>
+											<div class="services-box_body">
+												<h4 class="title">Web сайты</h4>
+												<p class="text">
+													Разработка сайтов, интернет магазинов, лендингов, сайт-визиток, корпоративных сайтов любой сложности.
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-4">
+										<div class="services-box">
+											<header>
+												<img src="assets/img/background.jpg" alt="">
+											</header>
+											<div class="services-box_body">
+												<h4 class="title">Back-end</h4>
+												<p class="text">
+													Полный спектр услуг по back-end разработке. Качественное ядро, правильная архитектура и юзабилити для вашего сайта.
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-4">
+										<div class="services-box">
+											<header>
+												<img src="assets/img/background.jpg" alt="">
+											</header>
+											<div class="services-box_body">
+												<h4 class="title">Blockchain</h4>
+												<p class="text">
+													Blockchain-приложения на основе платформы Ethereum с целью использования преимуществ распределенной базы в вашем бизнесе. 
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-lg-4">
+										<div class="services-box">
+											<header>
+												<img src="assets/img/background.jpg" alt="">
+											</header>
+											<div class="services-box_body">
+												<h4 class="title">smm-продвижение</h4>
+												<p class="text">
+													Сегодня соц-сети популярны как никогда. Люди обращаются к ним ежедневно, а среди них могут быть и ваши возможные клиенты.
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-4">
+										<div class="services-box">
+											<header>
+												<img src="assets/img/background.jpg" alt="">
+											</header>
+											<div class="services-box_body">
+												<h4 class="title">ui-ux дизайн</h4>
+												<p class="text">
+													Проработка опыта взаимодействия пользователя с интерфейсом. Дизайн красивых, современных и удобных сайтов.
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-4">
+										<div class="services-box">
+											<header>
+												<img src="assets/img/background.jpg" alt="">
+											</header>
+											<div class="services-box_body">
+												<h4 class="title">Видео-продукция</h4>
+												<p class="text">
+													Анимационные, графические ролики и видео-презентации. От концепции до озвучки и музыкального оформления.
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="case" class="section panel" data-anchor="thirdPage" data-section-name="case">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12">
+							<div class="services-title">
+								<div class="line"></div>
+								<h2 class="title">Портфолио</h2>
+							</div>
+							<div class="col-md-12">
+								<div class="carousel">
+									<div class="slides">
+										<div class="slideItem">
+											<a href="#"> <img src="http://placehold.it/350x300?text=Case One"> </a>
+										</div>
+										<div class="slideItem">
+											<a href="#"> <img src="http://placehold.it/350x300?text=Case Two"> </a>
+										</div>
+										<div class="slideItem">
+											<a href="#"> <img src="http://placehold.it/350x300?text=Case Thre"> </a>
+										</div>
+										<div class="slideItem">
+											<a href="#"> <img src="http://placehold.it/350x300?text=Case Five"> </a>
+										</div>
+									</div>
+								</div>
+								<div class="case-content">
+									<h2 class="title">Название кейса</h2>
+									<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident, porro
+										consequuntur ipsa inventore
+										exercitationem facere?</p>
+									<a href="#">Посмотреть кейс</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="team" class="section panel" data-anchor="fourPage" data-section-name="team">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12">
+							<div class="services-title">
+								<div class="line"></div>
+								<h2 class="title">Наша команда</h2>
+							</div>
+							<div class="team-box d-flex justify-content-center">
+								<div class="left-bar">
+									<div class="left-bar_photo">
+										<img src="assets/img/team/Bek2.jpg"  alt="" class="team-photo_small active">
+									</div>
+									<div class="left-bar_photo">
+										<img src="assets/img/team/Mir2.jpg" alt="" class="team-photo_small">
+									</div>
+									<div class="left-bar_photo">
+										<img src="assets/img/team/Art2.jpg" alt="" class="team-photo_small">
+									</div>
+									<div class="left-bar_photo">
+										<img src="assets/img/team/Vas2.jpg" alt="" class="team-photo_small">
+									</div>
+									<div class="left-bar_photo">
+										<img src="assets/img/team/Rus2.jpg" alt="" class="team-photo_small">
+									</div>
+								</div>
+								<div class="right-bar-body">
+									<div class="right-bar d-flex active">
+										<img src="assets/img/team/Bek.jpg" alt="Василий" class="img-photo">
+										<div class="team-info">
+											<h2 class="team-title">Бекназар</h2>
+											<p class="team-text">
+												<marquee scrollamount="6"  class="team-text">Team Lead, Full-stack разработчик, blockchain разработчик.</marquee>
+												Как руководитель команды обеспечиваю стабильную разработку, помогаю в сложных ситуациях и развиваю архитектуру проектов. Создание чего-то нового самое интересное в нашей профессии. Опыт разработки в разных сферах деятельности позволяет адаптивно подойти к решению любых задач.
+											</p>
+											<div class="progress-page">
+												<div class="progress">
+													<div class="progress-bar" role="progressbar" style="width: 20%;"
+														aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+												</div>
+												<div class="page">01/05</div>
+											</div>
+										</div>
+									</div>
+									<div class="right-bar d-flex">
+										<img src="assets/img/team/Mir.jpg" alt="Василий" class="img-photo">
+										<div class="team-info">
+											<h2 class="team-title">Мирас</h2>
+											<p class="team-text">
+												<marquee scrollamount="6" behavior="slide" class="team-text">UX/UI дизайнер.</marquee>
+												Более четырех лет опыта в концептуализации и разработке детального UI. Мне нравится привносить в дизайн что-то новое и необычное, делая его при этом удобным и более значимым.
+											</p>
+											<div class="progress-page">
+												<div class="progress">
+													<div class="progress-bar" role="progressbar" style="width: 40%;"
+														aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+												</div>
+												<div class="page">02/05</div>
+											</div>
+										</div>
+									</div>
+									<div class="right-bar d-flex">
+										<img src="assets/img/team/Art.jpg" alt="Василий" class="img-photo">
+										<div class="team-info">
+											<h2 class="team-title">Артем</h2>
+											<p class="team-text">
+												<marquee scrollamount="6" class="team-text">Back-end, Python, PHP, Javascript developer.</marquee>
+												Я работаю в области информационных технологий более 5 лет. За это время мной накоплен уникальный опыт в программировании, работе с различным ПО и администрировании. С 2016 года я специализируюсь на web-технологиях, работаю в качестве Back-End разработчика.
+											</p>
+											<div class="progress-page">
+												<div class="progress">
+													<div class="progress-bar" role="progressbar" style="width: 60%;"
+														aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+												</div>
+												<div class="page">03/05</div>
+											</div>
+										</div>
+									</div>
+									<div class="right-bar d-flex">
+										<img src="assets/img/team/Vas.jpg" alt="Василий" class="img-photo">
+										<div class="team-info">
+											<h2 class="team-title">Василий</h2>
+											<p class="team-text">
+												<marquee scrollamount="6" behavior="slide" class="team-text">Front-End разработчик</marquee>
+												Работаю в сфере web-разработки не так давно, но уже за пол года работы в команде, достиг хороших результатов. На моем счету более 10 реализованных проектов. Веб индустрия для меня в первую очередь хобби, которое приносит мне удовольствие от изучения и воплощения новых тенденций и технологий.
+											</p>
+											<div class="progress-page">
+												<div class="progress">
+													<div class="progress-bar" role="progressbar" style="width: 80%;"
+														aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+												</div>
+												<div class="page">04/05</div>
+											</div>
+										</div>
+									</div>
+									<div class="right-bar d-flex">
+										<img src="assets/img/team/Rus.jpg" alt="Василий" class="img-photo">
+										<div class="team-info">
+											<h2 class="team-title">Руслан</h2>
+											<p class="team-text">
+												<marquee scrollamount="6" behavior="slide" class="team-text">Back-end разработчик.</marquee>
+												В сфере IT более 2 лет. Приобрел значимый опыт в проектировании архитектуры веб-приложений, создании и доработки ядра сайтов, оптимальных алгоритмов, оптимизации кода, управлении БД, администрировании специализированного ПО предприятий различных областей деятельности.
+											</p>
+											<!-- <div class="team-soc">
+												<a href="#"><i class="fab fa-youtube"></i></a>
+												<a href="#"><i class="fab fa-behance"></i></a>
+												<a href="#"><i class="fab fa-instagram"></i></a>
+											</div> -->
+											<div class="progress-page">
+												<div class="progress">
+													<div class="progress-bar" role="progressbar" style="width: 100%;"
+														aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+												</div>
+												<div class="page">05/05</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="contacts" class="section panel" data-anchor="contactsPage" data-section-name="contacts">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4">
+							<div class="services-title">
+								<div class="line"></div>
+								<h2 class="title">Есть проект или идея?<br>Мы поможем вам её реализовать!</h2>
+							</div>
+							<div class="stages">
+								<div class="stage"><span></span> Вы предоставляете нам подробную информацию о проекте. Мы обговариваем сроки, объем работы и цену.</div>
+								<div class="stage"><span></span> Познакомимся и обсудим вместе все возможные детали проекта. При личной встрече, либо через Telegram, Skype.</div>
+								<div class="stage"><span></span> Когда контакт установлен и все цели поставлены, мы приступаем к разработке.</div>
+							</div>
+						</div>
+						<div class="col-md-8">
+							<form class="form-inline">
+								<div class="form-group__df">
+									<div class="form-group">
+										<label for="name">Как к вам обращатся?</label>
+										<input type="name" name="name" id="name" class="form-control" placeholder="Как вас зовут?">
+									</div>
+									<div class="form-group">
+										<label for="e-mail">Ваш E-mail</label>
+										<input type="e-mail" name="e-mail" id="e-mail" class="form-control" placeholder="Введите ваш E-mail">
+									</div>
+								</div>
+								<div class="form-group budget">
+									<label for="budget">БЮДЖЕТ ПРОЕКТА</label>
+									<input type="checkbox" name="budget" id="budget" value="" ><small for="budget" class="text-muted">не указывать</small>
+								</div>	
+								<div class="progress">
+									<div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"><span class="progress-circle" value="до 1000;"></span><span class="progress-circle-2" value="от 1000$ до 10 000$"></span><span class="progress-circle-3" value="от 10 000$ и выше"></span></div>
+									<input id="progress-in" type="hidden" value="до 1000$">
+								</div>
+								<div class="form-group">
+								  <textarea class="form-control" name="comment" id="comment" rows="6" placeholder="ОПИШИТЕ ПРОЕКТ, ДЕТАЛИ, ССЫЛКИ НА ТЗ И Т.П."></textarea>
+								</div>
+								<div class="form-group">
+									<button class="btn btn-main">Отправить</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+	</main>
+
+
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="assets/js/jquery.min.js"></script>
+
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/wow.min.js"></script>
+	<script src="assets/js/jquery.scrollify.js"></script>
+	<script src="assets/js/slick.min.js"></script>
+	<script src="assets/js/jquery.carousel-1.1.min.js"></script>
+	<script src="assets/js/easings.min.js"></script>
+	<script src="assets/js/scrolloverflow.min.js"></script>
+	<script src="assets/js/jquery.pagepiling.min.js"></script>
+	<script src="assets/js/fullpage.extensions.min.js"></script>
+	<script src="assets/js/fullpage.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.11/jquery.mousewheel.min.js"></script>
+	<script>
+		$('.progress', function(){
+			var progressBar = $('.progress-bar');
+			var progressOne = $('.progress-circle');
+			var progressTwo = $('.progress-circle-2');
+			var progressThree = $('.progress-circle-3');
+			
+			progressOne.on('click', function(){
+				progressBar.css("width", "0%")
+				progressTwo.css("background", "#929395")
+				progressThree.css("background", "#929395")
+			});
+			progressTwo.on('click', function(){
+				$(this).css("background", "#fff")
+				progressBar.css("width", "50%")
+				progressThree.css("background", "#929395")
+			});
+			progressThree.on('click', function(){
+				$(this).css("background", "#fff")
+				progressBar.css("width", "100%")
+			});
+		});
+		
+		var proggressVal = $('progress-circle').val();
+		$('.progress-circle').on('click', function(){
+			$('#progress-in').val("до 1000$")
+		});
+		$('.progress-circle-2').on('click', function(){
+			$('#progress-in').val("оn 1000$ до 10 000$")
+		});
+		$('.progress-circle-3').on('click', function(){
+			$('#progress-in').val("от 10 000$ и выше")
+		});
+		// $(function valid(){
+		// 	if ($('#budget').prop("checked") == 'checked') {
+		// 		alert(123)
+		// 	} else {
+		// 		alert(321)
+		// 	}
+		// });
+	</script>
+	<script>
+		var slideWidth = 300;
+		var sliderTimer;
+		$(function () {
+			$('.slidewrapper').width($('.slidewrapper').children().size() * slideWidth);
+			sliderTimer = setInterval(nextSlide, 1000);
+			$('.viewport').hover(function () {
+				clearInterval(sliderTimer);
+			}, function () {
+				sliderTimer = setInterval(nextSlide, 1000);
+			});
+		});
+
+		function nextSlide() {
+			var currentSlide = parseInt($('.slidewrapper').data('current'));
+			currentSlide++;
+			if (currentSlide >= $('.slidewrapper').children().size()) {
+				currentSlide = 0;
+			}
+			$('.slidewrapper').animate({
+				left: -currentSlide * slideWidth
+			}, 300).data('current', currentSlide);
+		}
+	</script>
+	<script>
+		new WOW().init();
+
+		$(".navbar-toggler").click(function () {
+			$('main').toggleClass('openmobile')
+		});
+
+		new fullpage('#fullpage', {
+			licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
+			anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourPage', 'contactsPage'],
+			navigation: true,
+			scrollOverflow: true,
+			navigationTooltips: ['Домой', 'Услуги', 'Кейсы', 'Команда', 'Заказать']
+		});
+
+		// $(function() {
+		// 	$('.left-bar_photo').click(function(e) {
+		// 		var $current = $('.right-bar.active');
+		// 		$current.removeClass('active');
+		// 		$current.next('.right-bar').addClass('active');
+		// 	});
+		// });
+
+		$('.left-bar_photo').on('click', function () {
+			$('.team-photo_small').removeClass('active');
+			$(this).find('.team-photo_small').addClass('active');
+				// $('.right-bar-body', function(){
+				// 	$('.right-bar.active').removeClass('active');
+				// 	$(this).find('.right-bar').addClass('active')
+				// })
+		});
+
+
+		$('.team-photo_small:eq(0)').on('click', function(){
+			$('.right-bar.active').removeClass('active');
+			$('.right-bar:eq(0)').addClass('active');
+		});
+		$('.team-photo_small:eq(1)').on('click', function(){
+			$('.right-bar.active').removeClass('active');
+			$('.right-bar:eq(1)').addClass('active');
+		});
+		$('.team-photo_small:eq(2)').on('click', function(){
+			$('.right-bar.active').removeClass('active');
+			$('.right-bar:eq(2)').addClass('active');
+		});
+		$('.team-photo_small:eq(3)').on('click', function(){
+			$('.right-bar.active').removeClass('active');
+			$('.right-bar:eq(3)').addClass('active');
+		});
+		$('.team-photo_small:eq(4)').on('click', function(){
+			$('.right-bar.active').removeClass('active');
+			$('.right-bar:eq(4)').addClass('active');
+		});
+
+		// $(document).scroll(function () {
+        //     $(".active").toggleClass("active");
+        //     if ($(window).scrollTop() < $("#header-wrapper").offset().top - 1) { //maybe you want to tweak this value
+        //         $($("nav li")[1]).toggleClass("active");
+        //     } else if ($(window).scrollTop() < $("#case").offset().top - 1) {
+        //         $($("nav li")[2]).toggleClass("active");
+        //     } else if ($(window).scrollTop() < $("#adaptive").offset().top - 1) {
+        //         $($("nav li")[3]).toggleClass("active");
+        //     } else if ($(window).scrollTop() < $("#slider").offset().top - 100) {
+        //         $($("nav li")[4]).toggleClass("active");
+        //     } else {
+        //         $($("nav li")[5]).toggleClass("active");
+        //     }
+        // });
+
+		$(document).ready(function () {
+			$('.carousel').carousel({
+				carouselWidth: 930,
+				carouselHeight: 330,
+				directionNav: true,
+				shadow: false,
+				mouse: false
+
+			});
+		});
+
+		// $(function () {
+		// 	$.scrollify({
+		// 		section: ".panel",
+		// 		scrollSpeed: 0,
+		// 		scrollbars: true,
+		// 		before: function (i, panels) {
+
+		// 			var ref = panels[i].attr("data-section-name");
+
+		// 			$(".pagination .active").removeClass("active");
+
+		// 			$(".pagination").find("a[href=\"#" + ref + "\"]").addClass("active");
+		// 		},
+		// 		afterRender: function () {
+		// 			var pagination = "<ul class=\"pagination\">";
+		// 			var activeClass = "";
+		// 			$(".panel").each(function (i) {
+		// 				activeClass = "";
+		// 				if (i === 0) {
+		// 					activeClass = "active";
+		// 				}
+		// 				pagination += "<li><a class=\"" + activeClass + "\" href=\"#" + $(this)
+		// 					.attr("data-section-name") +
+		// 					"\"><span class=\"hover-text\">" + $(this).attr("data-section-name")
+		// 					.charAt(0).toUpperCase() + $(this).attr(
+		// 						"data-section-name").slice(1) + "</span></a></li>";
+		// 			});
+
+		// 			pagination += "</ul>";
+
+		// 			$(".home").append(pagination);
+		// 			/*
+
+		// 			Tip: The two click events below are the same:
+
+		// 			$(".pagination a").on("click",function() {
+		// 			  $.scrollify.move($(this).attr("href"));
+		// 			});
+
+		// 			*/
+		// 			$(".pagination a").on("click", $.scrollify.move);
+		// 		}
+		// 	});
+		// });
+	</script>
+</body>
+
+</html>
